@@ -1,0 +1,45 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<aiml>
+   <category>
+      <pattern>Hi</pattern>
+      <template>
+         Hi, May I know your good name?
+      </template>
+   </category>
+   
+   <category>
+      <pattern>This is *</pattern>
+      <template>
+         Hello <star/> !!
+		 How can I help you ?
+      </template>
+   </category>
+   
+   <category>
+      <pattern>my name is *</pattern>
+      <template>
+         Hello <star/> !!
+		 How can I help you ?
+      </template>
+   </category>
+   
+   <category>
+      <pattern>I am *</pattern>
+      <template>
+         Hello <star/> !!
+		 How can I help you ?
+      </template>
+   </category>
+   
+   <category>
+      <pattern>*</pattern>
+	  <that>Hi, May I know your good name?</that>
+      <template>
+         Hello <star/> !!
+		 How can I help you ?
+      </template>
+   </category>
+   
+   
+   
+</aiml>
