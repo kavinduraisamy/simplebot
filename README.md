@@ -1,28 +1,31 @@
 # SimpleBot
 
-It is an basic chat bot application which is created using a SpringBoot and Program Ab. 
+It is a basic chat bot application which is created using a SpringBoot and Program Ab. 
 The Program Ab is an AIML 2.0 implementation
 
 
 ### Prerequisites
 
-JDK
-Maven
+* JDK
+* Maven
 
 ### How to Run
 
 Step 1: Clone the project
 
 Step 2: Edit the application.properties(src/main/resource) file and add your project base directory in simplebot.data.dir.
-...
-Exmple
+
+
+Exmple:
+
 simplebot.data.dir=e:/bot
-...
+
 
 Step 3: Add your AIML files in the directory bots/simplebot/aiml/ 
-...
+
+
 The example 'test.aiml' exists in the directory.  
-...
+
 
 Step 4: Run SpringBootApplication using main method com.techforwarder.bot.simplebot.SimplebotApplication or mvn spring-boot:run
 
