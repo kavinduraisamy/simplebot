@@ -1,0 +1,51 @@
+<html>
+<head>
+
+<script src="/js/jquery-3.2.1.min.js"></script>
+<style>
+.userText
+{
+color:blue;
+}
+.botText
+{
+color:red;
+}
+
+#chatwindow{
+height:400px;
+width:400px;
+overflow: auto;
+}
+</style>
+</head>
+<body>
+<div id="chatwindow">
+
+</div>
+<input type="text" id="chatbox" />
+<button id="send">Send</button>
+
+<script>
+$(function () {
+    $("#send").on('click', function () {
+    var chatText=$("#chatbox").val();
+    $("#chatbox").val("");
+    var p="<p align='right' class='userText'>"+chatText+"</p>";
+       $("#chatwindow").append(p);
+        $.ajax({
+            url: 'getResponse',
+            data: {
+                request: chatText,
+            },
+            success: function(data){
+             var p="<p align='left' class='botText'>"+data+"</p>";
+     $("#chatwindow").append(p);
+  }
+           
+        });
+    });
+});
+</script>
+</body>
+</html>
